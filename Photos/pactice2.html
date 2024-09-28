@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+        }
+        
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        h1 {
+            margin-bottom: 20px;
+        }
+        
+        .image-box img {
+            width: 100%;
+            height: auto;
+            border: 1px solid #000;
+        }
+        
+        .media-section {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        
+        .audio-box {
+            flex: 1;
+            margin-right: 10px;
+        }
+        
+        .image-grid {
+            display: flex;
+            gap: 10px;
+            flex: 2;
+        }
+        
+        .image-cell img {
+            width: 100px;
+            height: 100px;
+            border: 1px solid #000;
+        }
+        
+        .text-section {
+            margin-top: 20px;
+            border: 1px solid #000;
+            padding: 10px;
+        }
+        
+        p {
+            white-space: pre-line;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to My Blog</h1>
+        <div class="image-box">
+            <img src="your-image.jpg" alt="Blog Image">
+        </div>
+        <div class="media-section">
+            <div class="audio-box">
+                <audio controls>
+                    <source src="your-audio.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="image-grid">
+                <div class="image-cell">
+                    <img src="your-image.jpg" alt="Grid Image 1">
+                </div>
+                <div class="image-cell">
+                    <img src="your-image.jpg" alt="Grid Image 2">
+                </div>
+                <div class="image-cell">
+                    <img src="your-image.jpg" alt="Grid Image 3">
+                </div>
+                <div class="image-cell">
+                    <img src="your-image.jpg" alt="Grid Image 4">
+                </div>
+            </div>
+        </div>
+        <div class="text-section">
+            <p>Hear a text para contain the multiple lines</p>
+        </div>
+    </div>
+</body>
+</html>
